@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/misc.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="js/angular.min.js"></script>
+    </head>
+    <body>
+		<div class="site-header">
+            <div class="container">
+                <div class="main-header">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-10">
+                            <div class="logo">
+                                <a href="#">
+                                    <img style="width:150px; height:70px;" src="images/logo.jpg" alt="" title="">
+                                </a>
+                            </div> <!-- /.logo -->
+                        </div> <!-- /.col-md-4 -->
+                        
+                        <div class="col-md-8 col-sm-6 col-xs-2">
+                            <div class="main-menu">
+                                <ul class="visible-lg visible-md">
+                                    <li><a href="index.html">Home</a></li>
+                                    
+                                    <li class="active"><a href="events.html">Registration</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                </ul>
+                                <a href="#" class="toggle-menu visible-sm visible-xs">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div> <!-- /.main-menu -->
+                        </div> <!-- /.col-md-8 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.container -->
+        </div> <!-- /.site-header -->
+
+        <div class="page-top" id="templatemo_events">
+        </div> <!-- /.page-header -->
+
+        <div class="middle-content">
+            <div class="container">
+            
+                <div class="row"><!-- first row -->
+                
+                <div class="col-md-4">
+                <form action="Book.html" ng-app="myApp" ng-controller="validateCtrl" name="MyForm">
+                <div class="contact-form">
+                <h3 class="widget-title"> Event Details </h3>
+                <select required>
+                <option name="events">Events </option>
+                <option name="events">Technical</option>
+                <option name="events">Cultural</option>
+                <option name="events">GAMES </option>
+                </select>
+                   <!--	<input type="date" autocomplete="on" required="" name="Date" placeholder="yyyy-mm-dd" ng-model="Date"/>
+                 <span style:"color:red ng-show="MyForm.Date.$dirty && MyForm.Date.$invalid>
+                    <span ng-show="MyForm.Date.$error.required"></span>
+                    </span>
+                <select required>
+                <option name="Time">09:00 am</option>
+                <option name="Time">10:00 am</option>
+                <option name="Time">11:00 am</option>
+                <option name="Time">12:00 pm</option>
+                <option name="Time">01:00 pm</option>
+                <option name="Time">02:00 pm</option>
+                <option name="Time">03:00 pm</option>
+                <option name="Time">04:00 pm</option>
+                <option name="Time">05:00 pm</option>
+                <option name="Time">06:00 pm</option>
+                <option name="Time">07:00 pm</option>
+                <option name="Time">08:00 pm</option>
+                <option name="Time">09:00 pm</option>
+                <option name="Time">10:00 pm</option>
+                <option name="Time">11:00 pm</option>
+                <option name="Time">12:00 am</option>
+                <option name="Time">01:00 am</option>
+                <option name="Time">02:00 am</option>
+                <option name="Time">03:00 am</option>
+                <option name="Time">04:00 am</option>
+                <option name="Time">05:00 am</option>
+                <option name="Time">06:00 am</option>
+                <option name="Time">07:00 am</option>
+                <option name="Time">08:00 am</option>
+                </select>-->
+                </div>
+				</div>
+                
+                 <div class="col-md-4">
+                <div class="contact-form">
+                <h3 class="widget-title"> Location Details </h3>
+                <select>
+                <option name="Location" required="">Locations </option>
+                <option name="Location">Vellore</option>
+                <option name="Location">Chennai </option>
+                <option name="Location">Bhopal </option>
+				 <option name="Location">Amravati </option>
+                </select>
+                <!--<input type="date" autocomplete="on" required="" name="Date1" placeholder="yyyy-mm-dd" ng-model="Date1"/>
+                    <span style:"color:red ng-show="myForm.Date1.$dirty && MyForm.Date1.$invalid>
+                    <span ng-show="MyForm.Date1.$error.required"></span>
+                    </span>
+                <select required>
+                <option name="Time">09:00 am</option>
+                <option name="Time">10:00 am</option>
+                <option name="Time">11:00 am</option>
+                <option name="Time">12:00 pm</option>
+                <option name="Time">01:00 pm</option>
+                <option name="Time">02:00 pm</option>
+                <option name="Time">03:00 pm</option>
+                <option name="Time">04:00 pm</option>
+                <option name="Time">05:00 pm</option>
+                <option name="Time">06:00 pm</option>
+                <option name="Time">07:00 pm</option>
+                <option name="Time">08:00 pm</option>
+                <option name="Time">09:00 pm</option>
+                <option name="Time">10:00 pm</option>
+                <option name="Time">11:00 pm</option>
+                <option name="Time">12:00 am</option>
+                <option name="Time">01:00 am</option>
+                <option name="Time">02:00 am</option>
+                <option name="Time">03:00 am</option>
+                <option name="Time">04:00 am</option>
+                <option name="Time">05:00 am</option>
+                <option name="Time">06:00 am</option>
+                <option name="Time">07:00 am</option>
+                <option name="Time">08:00 am</option>
+                </select>-->
+                </div>
+				</div>
+                
+                 <div class="col-md-4">
+                <div class="contact-form">
+                <h3 class="widget-title"> Number of Candidates </h3>
+                <select required>
+                <option name="candidate">Number Of Candidates</option>
+                <option name="candidate">1</option>
+                <option name="candidate">2</option>
+                <option name="candidate">3</option>
+                <option name="candidate">more than 3</option>
+                </select>
+                
+                <span style:"color:red ng-show="MyForm.Days.$dirty && MyForm.Days.$invalid>
+                <span ng-show="MyForm.Days.$error.required"></span>
+                </span>
+                <button type="submit" class="success" id="submit" value="Student Registration"> Proceed </button>
+                </form>
+                </div>
+				</div>
+                
+                </div>
+                
+                <div class="main-header">
+                    <div class="row">
+						<center><h1 style="font-size:34px; margin-top:70px; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif"><Strong>WELCOME</Strong> TO <strong> College Fests </strong> in <strong> VIT UNIVERSITY </strong></h1></center>
+                        <center><p><h3 style="font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif;font-size:16px; line-height:25px"> Two main college fests are conducted in VIT: graVITas and Riviera. GRAVITAS is a techfest (technology oriented festival) conducted in August/September. Riviera is a sports and cultural festival.<br><br>According to organizers for Riviera, it pulled more than 300 participants from over 20 colleges and universities.</h3></p></center>
+                        <center><p><h3 style="font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif;font-size:20px; font-style:oblique"><strong> "Change is Evitable"</strong></h3></p></center>
+                    </div> <!-- /.row -->
+                </div> <!-- /.main-header -->
+                
+<div class="container">
+            <div class="row">
+                <div class="our-listing owl-carousel">
+                
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 1</h4>
+                            </div>
+                            <img src="images/rai1.jpg" alt="destination 1">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.400, proshow 1</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 2</h4>
+                            </div>
+                            <img src="images/mp9.jpg" alt="destination 2">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.400, proshow 2</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 3</h4>
+                            </div>
+                            <img src="images/delhi.jpg" alt="destination 3">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.400, proshow 3</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 4</h4>
+                            </div>
+                            <img src="images/har.jpg" alt="destination 4">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.250, proshow 4</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Gravitas</h4>
+                            </div>
+                            <img src="images/rai1.jpg" alt="destination 5">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.100, per day</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Utsav</h4>
+                            </div>
+                            <img src="images/mp9.jpg" alt="destination 6">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.800 </a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Jalwa</h4>
+                            </div>
+                            <img src="images/rai1.jpg" alt="destination 6">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.200, per day</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                </div> <!-- /.our-listing -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+
+                
+       </div> <!-- /.container -->
+        </div> <!-- /.middle-content -->
+
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img style="width:150px; height:70px;" src="images/logo.jpg" alt="">
+                            </a>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="copyright">
+                            <span>Copyright &copy; 2084 <a href="#">College_festsS</a></span>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <ul class="social-icons">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                            <li><a href="#" class="fa fa-flickr"></a></li>
+                            <li><a href="#" class="fa fa-rss"></a></li>
+                        </ul>
+                    </div> <!-- /.col-md-4 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.site-footer -->
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+		var app = angular.module('myApp',[]);
+		app.controller('validateCtrl',function($scope){
+			$scope.Date='2016-10-15';
+			$scope.Date1='2016-10-16';
+			$scope.Days='1';
+		});
+		</script>
+        <!-- templatemo 409 travel -->
+    </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Book</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/misc.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        
+        <script language="javascript" type="text/javascript">
+        function validateForm()
+{
+var x=document.forms["MyForm1"]["FLName"].value;
+var y=document.forms["MyForm1"]["Address"].value;
+var w=document.forms["MyForm1"]["City"].value;
+var z=document.forms["MyForm1"]["State"].value;
+var a=document.forms["MyForm1"]["Country"].value;
+var b=document.forms["MyForm1"]["post"].value;
+var c=document.forms["MyForm1"]["phone"].value;
+var d=document.forms["MyForm1"]["Email"].value;
+
+if (x==null || x=="")
+  {
+  alert("Name must be filled out");
+  return false;
+  }
+  if (y==null || y=="")
+  {
+  alert("Address must be filled out");
+  return false;
+  }
+  if (w==null || w=="")
+  {
+  alert("City must be filled out");
+  return false;
+  }
+  if (z==null || z=="")
+  {
+  alert("State must be filled out");
+  return false;
+  }
+    if (a==null || a=="")
+  {
+  alert("Country must be filled out");
+  return false;
+  }
+    if (b==null || b=="")
+  {
+  alert("post must be filled out");
+  return false;
+  }
+    if (c==null || d=="")
+  {
+  alert("Phone must be filled out");
+  return false;
+  }
+    if (d==null || d=="")
+  {
+  alert("Email must be filled out");
+  return false;
+  }
+}
+</script>
+
+    </head>
+    <body>
+		<div class="site-header">
+            <div class="container">
+                <div class="main-header">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-10">
+                            <div class="logo">
+                                <a href="#">
+                                    <img style="width:150px; height:70px;" src="images/logo.jpg" alt="travel html5 template" title="travel html5 template">
+                                </a>
+                            </div> <!-- /.logo -->
+                        </div> <!-- /.col-md-4 -->
+                        
+                        <div class="col-md-8 col-sm-6 col-xs-2">
+                            <div class="main-menu">
+                                <ul class="visible-lg visible-md">
+                                    <li><a href="index.html">Home</a></li>
+                                   
+                                    <li class="active"><a href="events.html">Registration</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                </ul>
+                                <a href="#" class="toggle-menu visible-sm visible-xs">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div> <!-- /.main-menu -->
+                        </div> <!-- /.col-md-8 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.container -->
+        </div> <!-- /.site-header -->
+
+        <div class="page-top" id="templatemo_events">
+        </div> <!-- /.page-header -->
+
+        <div class="middle-content">
+            <div class="container">
+            
+                <div class="row"><!-- first row -->
+                
+                <div class="col-md-6 col-md-12">
+                <form action="#" ng-app="myApp1" ng-controller="validateCtrl" name="MyForm1" onSubmit="return validateForm()">
+                <div class="contact-form">
+                <h3 class="widget-title"> PERSONAL DETAILS </h3>
+                	<input type="Text" autocomplete="on" name="FLName" placeholder="Name" ng-model="FLName"/>
+                    <span style:"color:red ng-show="MyForm1.FLName.$dirty && MyForm.FLName.$invalid>
+                    <span ng-show="MyForm.FLName.$error.required"></span>
+                    </span>
+                    <input type="text" autocomplete="on" name="Address" placeholder="Address" ng-model="Address"/>
+                    <span style:"color:red ng-show="MyForm1.Address.$dirty && MyForm1.Address.$invalid>
+                    <span ng-show="MyForm1.Address.$error.required"></span>
+                    </span>
+                    <input type="Text" autocomplete="on" name="City" placeholder="City" ng-model="City"/>
+                    <span style:"color:red ng-show="MyForm1.City.$dirty && MyForm1.City.$invalid>
+                    <span ng-show="MyForm.City.$error.required"></span>
+                    </span>
+                    <input type="Text" autocomplete="on" name="State" placeholder="State" ng-model="State"/>
+                    <span style:"color:red ng-show="MyForm1.State.$dirty && MyForm1.State.$invalid>
+                    <span ng-show="MyForm1.State.$error.required"></span>
+                    </span>
+                    <input type="Text" autocomplete="on" name="Country" placeholder="Country" ng-model="Country"/>
+                    <span style:"color:red ng-show="MyForm1.Country.$dirty && MyForm1.Country.$invalid>
+                    <span ng-show="MyForm1.Country.$error.required"></span>
+                    </span>
+                    <input type="Text" autocomplete="on" required="" name="post" placeholder="Postal Code" ng-model="post"/>
+                    <span style:"color:red ng-show="MyForm1.post.$dirty && MyForm1.post.$invalid>
+                    <span ng-show="MyForm1.post.$error.required"></span>
+                    </span>
+                    <input type="Text" autocomplete="on" required="" name="phone" placeholder="Phone" ng-model="phone"/>
+                    <span style:"color:red ng-show="MyForm1.phone.$dirty && MyForm1.phone.$invalid>
+                    <span ng-show="MyForm1.phone.$error.required"></span>
+                    </span>
+                    <input type="Email" autocomplete="on" required="" name="Email" placeholder="name@Email.com" ng-model="Email"/>
+                    <span style:"color:red ng-show="MyForm1.phone.$dirty && MyForm1.phone.$invalid>
+                    <span ng-show="MyForm1.phone.$error.required"></span>
+                    </span>
+                </div>
+				</div>
+                
+                 <div class="col-md-6 col-md-12">
+                <div class="contact-form">
+                <h3 class="widget-title"> ID PROOF </h3> <br>
+                 <input type="Radio" name="Id" value="Aadhar Card" style="width:20%; min-width:20%; max-width:20%"> &nbsp;Aadhar Card<br>
+                 <input type="radio" name="Id" value="Voter ID" style="width:20%; min-width:20%; max-width:20%"> &nbsp;Voter ID <br>
+                 <input type="radio" name="Id" value="PAN Card" style="width:20%; min-width:20%; max-width:20%"> &nbsp;PAN Card <br>
+                 <input type="radio" name="Id" value="Passport" style="width:20%; min-width:20%; max-width:20%; margin-bottom:35px;"> &nbsp;Passport <br>
+                 <input type="text" name="IdProof" required="" placeholder="Unique Identification Number">
+
+				<button type="submit" class="success" id="submit" value="Submit"> SUBMIT </button>
+                </div>
+				</div>
+                </form>
+                </div>
+				</div> 
+                </div>
+                
+                
+<div class="container">
+            <div class="row">
+                <div class="our-listing owl-carousel">
+                
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 1</h4>
+                            </div>
+                            <img src="images/rai1.jpg" alt="destination 1">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.400, proshow 1</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 1</h4>
+                            </div>
+                            <img src="images/mp9.jpg" alt="destination 2">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.400, proshow 2</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 3</h4>
+                            </div>
+                            <img src="images/delhi.jpg" alt="destination 3">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.400, proshow 3</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Rievera day 4</h4>
+                            </div>
+                            <img src="images/har.jpg" alt="destination 4">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.250, proshow 4</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Gravitas</h4>
+                            </div>
+                            <img src="images/rai1.jpg" alt="destination 5">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.100, per day</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Utsav</h4>
+                            </div>
+                            <img src="images/mp9.jpg" alt="destination 6">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.800</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                    <div class="list-item">
+                        <div class="list-thumb">
+                            <div class="title">
+                                <h4>Jalwa</h4>
+                            </div>
+                            <img src="images/rai1.jpg" alt="destination 6">
+                        </div> <!-- /.list-thumb -->
+                        <div class="list-content">
+                            <a href="#" class="price-btn">Rs.100, per day</a>
+                        </div> <!-- /.list-content -->
+                    </div> <!-- /.list-item -->
+                    
+                </div> <!-- /.our-listing -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+
+                
+       </div> <!-- /.container -->
+        </div> <!-- /.middle-content -->
+
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img style="width:150px; height:70px;" src="images/logo.jpg" alt="">
+                            </a>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="copyright">
+                            <span>Copyright &copy; 2084 <a href="#">College_festsS</a></span>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <ul class="social-icons">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                            <li><a href="#" class="fa fa-flickr"></a></li>
+                            <li><a href="#" class="fa fa-rss"></a></li>
+                        </ul>
+                    </div> <!-- /.col-md-4 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.site-footer -->
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+        var app = angular.module('myApp',[]);
+		app.controller('validateCtrl',function($scope){
+			$scope.FLName=' ';
+			$scope.Address=' ';
+			$scope.City=' ';
+			$scope.State=' ';
+			$scope.Country=' ';
+			$scope.post=' ';
+			$scope.phone=' ';
+			$scope.Email=' ';
+		});
+		</script>
+    </body>
+</html>
